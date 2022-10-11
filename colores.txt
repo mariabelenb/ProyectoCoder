@@ -1,0 +1,14 @@
+fondo:
+#031323
+
+nav:
+#031323
+
+letras: 
+h1 principal: #5D6D7E 
+
+body:
+#F0F3F4
+
+hover
+#273746

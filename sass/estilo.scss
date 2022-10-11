@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200;600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background-color: #031323;
+    font-family: 'Grenze Gotisch', cursive;
+    color: #F0F3F4;
+    text-align: center;
+}
+
+.navegacion__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #031323;
+}
+
+.navegacion__principal a {
+    padding: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #F0F3F4;
+}
+
+@media (min-width: 576px) {
+    .navegacion__principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #031323;
+    }
+
+    .navegacion__principal a {
+        padding: 1rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #F0F3F4;
+    }
+}
+
+/* .navegacion__principal a { 
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F0F3F4;
+}*/
+
+.navegacion__principal a:hover {
+    background-color: #273746;
+    transform: scale(1.5);
+}
+
+/* PORTADAS */
+.titulos_houses {
+    background-image: url(../img/houses.png);
+    display: flex;
+    font-size: 4rem;
+    padding: 6rem;
+    font-weight: 300;
+}
+
+.titulos_dragons {
+    background-image: url(../img/dragones.png);
+    background-size: cover;
+    display: flex;
+    font-size: 4rem;
+    padding: 6rem;
+    font-weight: 300;
+
+}
+
+.titulos_history {
+    background-image: url(../img/history.png);
+    background-size: cover;
+    display: flex;
+    font-size: 4rem;
+    padding: 6rem;
+    font-weight: 300;
+}
+
+.titulos_thewall {
+    background-image: url(../img/elmuro.png);
+    background-size: cover;
+    display: flex;
+    font-size: 4rem;
+    padding: 6rem;
+    font-weight: 300;
+}
+
+.redes {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* INDEX */
+.titulos {
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    font-size: 4rem;
+    font-weight: 400;
+
+}
+
+.contenido__principal,
+.modificador__texto {
+    padding: 2rem .5rem 2rem .5rem;
+
+}
+
+@media (min-width: 576px) {
+
+    .contenido__principal,
+    .modificador__texto {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+
+    @media (min-width: 992px) {
+
+        .contenido__principal,
+        .modificador__texto {
+            padding: 2rem 8rem 2rem 8rem;
+        }
+    }
+
+
+    /* .grilla {
+    display: grid;
+    grid-template-areas:
+        "temp-uno temp-dos temp-tres temp-cuatro"
+        "temp-cinco temp-seis temp-siete temp-ocho";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    justify-items: stretch;
+    justify-content: space-evenly;
+} 
+
+.contenedor {
+    max-width: 80rem;
+    margin-right: 20rem;
+    margin-left: 20rem;
+}*/
+    .contenedor h3 {
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 15rem;
+        height: 10rem;
+    }
+
+
+    .suscripcion {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border: #F0F3F4;
+    }
+
+    @media (min-width: 576px) {
+        .suscripcion {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+            border: #F0F3F4;
+        }
+    }
+
+    .logo_serie img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .suscripcion a {
+        text-decoration: none;
+        color: #F0F3F4;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .heading3 span {
+        font-size: 3rem;
+    }
+
+    button {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: 1px solid #F0F3F4;
+        display: block;
+        text-align: center;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(65deg, rgba(2, 0, 36, 1) 0%, rgba(3, 19, 35, 1) 35%, rgba(9, 57, 66, 1) 100%);
+    }
+
+
+
+    /* HOUSES */
+    .casas-poniente,
+    .manodelrey,
+    .flex_dragones,
+    .flex_desembarco  {
+        padding: 2rem .5rem 2rem .5rem;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    .casas-poniente,
+    .manodelrey,
+    .flex_dragones,
+    .flex_desembarco  {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+
+    @media (min-width: 992px) {
+
+        .casas-poniente,
+        .manodelrey,
+        .flex_dragones,
+        .flex_desembarco {
+            padding: 2rem 8rem 2rem 8rem;
+        }
+    }
+
+    .casa_blason {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .casa_listas {
+        text-align: left;
+    }
+
+    .lord_casa img {
+        width: 20rem;
+        height: 20rem;
+        transition: all 300ms;
+
+    }
+    .lord_casa img:hover{
+        transform: scale(1.15);
+    }
+
+    .parrafo_casa span {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .flex__houses {
+        display: flex;
+        gap: 2rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .manodelrey span {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .manodelrey {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .linea_separadora {
+        border-top: 3px solid #F0F3F4;
+        height: 2rem;
+        max-width: 70rem;
+        padding: 0;
+    }
+
+
+    /* THE WALL */
+
+    .contenido__principal--thewall span {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .contenedor_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* DRAGONS */
+
+    .flex_dragones{
+        display: flex;
+        gap: 2rem;
+        padding-bottom: 2rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    .contenido__principal--dragones{
+        padding-top: 2rem;
+    }
+
+    .linea_separadora--dr {
+        @media (min-width: 992px){
+        border-top: 3px solid #F0F3F4;
+        height: 2rem;
+        max-width: 68rem;
+        margin-left: 7rem;
+    }
+    }
+}
+
