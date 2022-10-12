@@ -1,0 +1,39 @@
+.navegacion__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $fondo;
+        a {
+            padding: 0.5rem;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            color: $blanco;
+    }
+}
+
+
+
+@media (min-width: 576px) {
+    .navegacion__principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: $fondo;
+    }
+
+    .navegacion__principal a {
+        padding: 1rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $blanco;
+    }
+}
+
+.navegacion__principal a:hover {
+    background-color: $hover;
+    transform: scale(1.25);
+}

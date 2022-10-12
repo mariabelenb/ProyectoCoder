@@ -26,7 +26,6 @@ body {
   justify-content: space-around;
   background-color: #031323;
 }
-
 .navegacion__principal a {
   padding: 0.5rem;
   text-decoration: none;
@@ -52,20 +51,11 @@ body {
     color: #F0F3F4;
   }
 }
-/* .navegacion__principal a { 
-    padding: 1rem;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #F0F3F4;
-}*/
 .navegacion__principal a:hover {
   background-color: #273746;
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
 
-/* PORTADAS */
 .titulos_houses {
   background-image: url(../img/houses.png);
   display: flex;
@@ -101,7 +91,7 @@ body {
   font-weight: 300;
 }
 
-.redes {
+footer .redes {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 2rem;
   display: flex;
@@ -110,7 +100,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 footer p {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -121,8 +110,8 @@ footer p {
 .titulos {
   text-align: center;
   margin: 3rem 0 3rem 0;
-  font-size: 4rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .contenido__principal,
@@ -135,34 +124,12 @@ footer p {
 .modificador__texto {
     padding: 2rem 2rem 2rem 2rem;
   }
-  /* .grilla {
-      display: grid;
-      grid-template-areas:
-          "temp-uno temp-dos temp-tres temp-cuatro"
-          "temp-cinco temp-seis temp-siete temp-ocho";
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 1rem;
-      justify-items: stretch;
-      justify-content: space-evenly;
-  } 
-
-  .contenedor {
-      max-width: 80rem;
-      margin-right: 20rem;
-      margin-left: 20rem;
-  }*/
   /* HOUSES */
 }
 @media (min-width: 576px) and (min-width: 992px) {
   .contenido__principal,
 .modificador__texto {
     padding: 2rem 8rem 2rem 8rem;
-  }
-}
-@media (min-width: 576px) {
-  .contenedor h3 {
-    font-size: 1rem;
   }
 }
 @media (min-width: 576px) {
@@ -181,6 +148,12 @@ footer p {
     padding-top: 3rem;
     padding-bottom: 3rem;
     border: #F0F3F4;
+  }
+  .suscripcion a {
+    text-decoration: none;
+    color: #F0F3F4;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 @media (min-width: 576px) and (min-width: 576px) {
@@ -202,15 +175,8 @@ footer p {
   }
 }
 @media (min-width: 576px) {
-  .suscripcion a {
-    text-decoration: none;
-    color: #F0F3F4;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
-@media (min-width: 576px) {
   .heading3 span {
+    font-weight: bold;
     font-size: 3rem;
   }
 }
@@ -240,10 +206,8 @@ footer p {
 .flex_desembarco {
     padding: 2rem 2rem 2rem 2rem;
   }
-  /* THE WALL */
-  /* DRAGONS */
 }
-@media (min-width: 576px) and (min-width: 992px) {
+@media (min-width: 992px) {
   .casas-poniente,
 .manodelrey,
 .flex_dragones,
@@ -251,91 +215,79 @@ footer p {
     padding: 2rem 8rem 2rem 8rem;
   }
 }
-@media (min-width: 576px) {
-  .casa_blason {
-    width: 5rem;
-    height: 5rem;
-  }
+.lord_casa img {
+  width: 20rem;
+  height: 20rem;
+  transition: all 300ms;
 }
-@media (min-width: 576px) {
-  .casa_listas {
-    text-align: left;
-  }
+
+.lord_casa img:hover {
+  transform: scale(1.15);
 }
-@media (min-width: 576px) {
-  .lord_casa img {
-    width: 20rem;
-    height: 20rem;
-    transition: all 300ms;
-  }
+
+.casa_blason {
+  width: 5rem;
+  height: 5rem;
 }
-@media (min-width: 576px) {
-  .lord_casa img:hover {
-    transform: scale(1.15);
-  }
+
+.casa_listas {
+  text-align: left;
 }
-@media (min-width: 576px) {
-  .parrafo_casa span {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+.casa_listas .subtitulos {
+  font-weight: bold;
+  font-size: 2rem;
 }
-@media (min-width: 576px) {
-  .flex__houses {
-    display: flex;
-    gap: 2rem;
-    padding-bottom: 2rem;
-  }
+
+.flex__houses {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
-@media (min-width: 576px) {
-  .manodelrey span {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+
+.manodelrey {
+  display: flex;
+  gap: 2rem;
 }
-@media (min-width: 576px) {
-  .manodelrey {
-    display: flex;
-    gap: 2rem;
-  }
+.manodelrey span {
+  font-weight: bold;
+  font-size: 2rem;
 }
-@media (min-width: 576px) {
-  .linea_separadora {
-    border-top: 3px solid #F0F3F4;
-    height: 2rem;
-    max-width: 70rem;
-    padding: 0;
-  }
+
+.linea_separadora {
+  border-top: 3px solid #F0F3F4;
+  height: 2rem;
+  max-width: 70rem;
+  padding: 0;
 }
-@media (min-width: 576px) {
-  .contenido__principal--thewall span {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+
+/* THE WALL */
+.contenido__principal--thewall span, .contenido__principal h2 span {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-@media (min-width: 576px) {
-  .contenedor_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
-  }
+
+.contenedor_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
 }
-@media (min-width: 576px) {
-  .flex_dragones {
-    display: flex;
-    gap: 2rem;
-    padding-bottom: 2rem;
-    align-items: center;
-    text-align: left;
-  }
+
+/* DRAGONS */
+.flex_dragones {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  text-align: left;
 }
-@media (min-width: 576px) {
-  .contenido__principal--dragones {
-    padding-top: 2rem;
-  }
+
+.contenido__principal--dragones {
+  padding-top: 2rem;
 }
-@media (min-width: 576px) and (min-width: 992px) {
+
+@media (min-width: 992px) {
   .linea_separadora--dr {
     border-top: 3px solid #F0F3F4;
     height: 2rem;
