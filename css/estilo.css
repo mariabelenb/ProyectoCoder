@@ -244,6 +244,18 @@ footer p {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 576px) {
+  .flex__houses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    gap: 2rem;
+  }
+}
 .manodelrey {
   display: flex;
   gap: 2rem;
@@ -253,6 +265,17 @@ footer p {
   font-size: 2rem;
 }
 
+@media (max-width: 576px) {
+  .manodelrey {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+  }
+}
 .linea_separadora {
   border-top: 3px solid #F0F3F4;
   height: 2rem;
@@ -274,6 +297,13 @@ footer p {
   gap: 1rem;
 }
 
+@media (max-width: 576px) {
+  .contenedor_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
 /* DRAGONS */
 .flex_dragones {
   display: flex;
@@ -283,6 +313,17 @@ footer p {
   text-align: left;
 }
 
+@media (max-width: 576px) {
+  .flex_dragones {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    align-content: space-around;
+    text-align: center;
+  }
+}
 .contenido__principal--dragones {
   padding-top: 2rem;
 }
